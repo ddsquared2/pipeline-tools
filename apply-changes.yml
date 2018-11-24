@@ -1,6 +1,10 @@
 # code_snippet apply-changes start yaml
 ---
 platform: linux
+image_resource:
+  type: docker-image
+  source:
+    repository: pivotalservices/bosh2-docker
 
 inputs:
 - name: env # contains the env file with target OpsMan Information
